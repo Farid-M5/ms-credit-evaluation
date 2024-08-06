@@ -1,0 +1,46 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_customers_table
+      author: Farid Mammadli
+      changes:
+        - createTable:
+            tableName: customers
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: fin
+                  type: varchar(7)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: national_id_number
+                  type: varchar(15)
+              - column:
+                  name: customer_name
+                  type: varchar(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: customer_surname
+                  type: varchar(25)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: customer_father_name
+                  type: varchar(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: customer_birthday
+                  type: date
+                  constraints:
+                    nullable: false
+              - column:
+                  name: customer_current_salary
+                  type: double

@@ -1,0 +1,36 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_customer_history
+      author: Farid Mammadli
+      changes:
+        - createTable:
+            tableName: customer_history
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: customer_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: x_bank_customer
+                  type: boolean
+                  constraints:
+                    nullable: false
+              - column:
+                  name: eligibility
+                  type: varchar(20)
+        - addForeignKeyConstraint:
+            baseTableName: customer_history
+            baseColumnNames: customer_id
+            referencedTableName: customers
+            referencedColumnNames: id
+            constraintName: fk_customer_id
+            onDelete: cascade
+

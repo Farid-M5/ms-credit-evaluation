@@ -1,0 +1,126 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-customer-data
+      author: Farid Mammadli
+      changes:
+        - sql:
+            sql: |
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('8HSMYOP', 
+              'AZE012345678', 'Elnur', 'Ahmadov', 'Ramil', '1980-01-01', 450.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('4FGKNZD', 
+              'AA0448518', 'Elsad', 'Akbarov', 'Elvin', '1990-05-15', 400.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('5JLPXQI', 
+              'AZE034567890', 'Leyla', 'Mammadova', 'Kamran', '1985-03-22', 1500.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('7BTRNWL', 
+              'AA1234567', 'Ramil', 'Huseynov', 'Eldar', '1978-11-13', 2000.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('3HZMNRP', 
+              'AZE078901234', 'Gulnar', 'Quliyeva', 'Tural', '1992-07-19', 2500.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('1DLWQKF', 
+              'AA5678901', 'Samir', 'Rzayev', 'Rauf', '1988-09-05', 3000.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('2MTXUHL', 
+              'AZE091234567', 'Aysel', 'Huseynova', 'Fikret', '1991-12-25', 400.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('9KGBRZT', 
+              'AA6789012', 'Elchin', 'Hajiyev', 'Ilham', '1982-01-30', 1000.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('6GQRJCD', 
+              'AZE345678901', 'Nariman', 'Jafarov', 'Namiq', '1993-04-12', 1500.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('0WPTXMK', 
+              'AA1234567', 'Fidan', 'Mammadova', 'Kamran', '1989-06-17', 2000.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('8LONFJQ', 
+              'AZE987654321', 'Rauf', 'Mammadov', 'Ramin', '1987-02-28', 2500.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('4HZTVLM', 
+              'AA2345678', 'Tariyel', 'Rzaev', 'Yusif', '1995-08-22', 3000.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('7NRCXJQ', 
+              'AZE876543210', 'Aynur', 'Guliyeva', 'Rauf', '1984-10-11', 450.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('5JMQSFD', 
+              'AA3456789', 'Vusal', 'Aliyev', 'Eldar', '1990-05-02', 1000.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('2FGPLRQ', 
+              'AZE456789012', 'Nigar', 'Jafarova', 'Ramil', '1992-01-15', 1500.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('6LKRBMC', 
+              'AA4567890', 'Kamran', 'Novruzov', 'Vusal', '1986-12-20', 2000.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('8WNGTZR', 
+              'AZE567890123', 'Lala', 'Mammadova', 'Eldar', '1993-09-13', 2500.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('3SDFYVB', 
+              'AA5678901', 'Elmar', 'Huseynov', 'Nijat', '1981-07-07', 3000.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('1TGKZRW', 
+              'AZE678901234', 'Togrul', 'Hajiyev', 'Ramin', '1994-04-19', 450.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('9MWNXLV', 
+              'AA6789012', 'Maya', 'Guliyeva', 'Kamran', '1987-11-29', 500.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('4QKLRMD', 
+              'AZE789012345', 'Leyla', 'Mammadova', 'Tural', '1995-06-01', 450.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('7RZFJLC', 
+              'AA7890123', 'Ramil', 'Huseynov', 'Elvin', '1986-05-03', 400.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('5NKTZVC', 
+              'AZE890123456', 'Gulnar', 'Quliyeva', 'Ilham', '1992-08-15', 425.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('2LQPSNX', 
+              'AA8901234', 'Samir', 'Rzayev', 'Vusal', '1985-10-30', 450.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('9JKMQHZ', 
+              'AZE901234567', 'Aysel', 'Huseynova', 'Namiq', '1988-03-17', 475.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('4BRLQZV', 
+              'AA9012345', 'Fidan', 'Mammadova', 'Rauf', '1990-11-23', 425.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('8NCTJWD', 
+              'AZE012345678', 'Rauf', 'Mammadov', 'Kamran', '1991-04-20', 450.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('3DLQNRF', 
+              'AA0123456', 'Tariyel', 'Rzaev', 'Fikret', '1992-05-15', 400.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('6XKJVDW', 
+              'AZE123456789', 'Aynur', 'Guliyeva', 'Eldar', '1987-03-28', 450.00);
+
+              INSERT INTO customers (fin, national_id_number, customer_name, customer_surname, 
+              customer_father_name, customer_birthday, customer_current_salary) VALUES ('9LTQPBX', 
+              'AA1234568', 'Vusal', 'Aliyev', 'Ramil', '1985-07-14', 475.00);

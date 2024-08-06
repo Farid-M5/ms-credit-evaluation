@@ -1,0 +1,73 @@
+plugins {
+	id 'java'
+	id "groovy"
+	id "org.springframework.boot" version "${springBootVersion}"
+	id "io.spring.dependency-management" version "${dependencyManagementVersion}"
+}
+
+ext {
+	springCloudVersion = "2023.0.3"
+}
+
+group = 'com.practice'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	//spring
+	implementation("org.springframework.boot:spring-boot-starter-web:${springStarter}")
+
+	//client
+	implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
+
+	//logging
+	implementation("net.logstash.logback:logstash-logback-encoder:${logstashLogbackEncoderVersion}")
+	implementation("ch.qos.logback:logback-classic")
+	implementation("ch.qos.logback:logback-core")
+	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+
+	//data
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("org.liquibase:liquibase-core")
+	runtimeOnly("org.postgresql:postgresql")
+
+	//auto generation
+	compileOnly("org.projectlombok:lombok: ${lombokVersion}")
+	annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+
+	//mapping
+	implementation("org.mapstruct:mapstruct:${mapStructVersion}")
+	annotationProcessor("org.mapstruct:mapstruct-processor:${mapStructVersion}")
+
+	//test
+	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.apache.groovy:groovy:${groovyVersion}")
+	testImplementation("io.github.benas:random-beans:${randomBean}")
+	testImplementation("org.spockframework:spock-spring:2.3-groovy-4.0")
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:$springCloudVersion"
+	}
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
